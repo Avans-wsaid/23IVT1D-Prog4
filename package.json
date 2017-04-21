@@ -1,0 +1,14 @@
+{
+  "name": "randomuser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./MyRandomUser/server.js",
+  "scripts": {
+  "start": "node ./MyRandomUser/server.js"
+  },
+  "author": "Walid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
