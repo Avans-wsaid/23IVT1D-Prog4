@@ -19,11 +19,6 @@ app.put('/', function(request, response) {
     response.send('Hello Avans, PUT request received!');
 });
 
-app.all('*', function(request, response) {
-    response.status(404);
-    response.send('404 - Not found');
-});
-
 app.get('/json', function(request, response) {
     response.json({
         'some_name': 'Value',
@@ -43,6 +38,11 @@ app.get('/json', function(request, response) {
             "twee", "drie", "vijf", "zeven"
         ]
     })
+});
+
+app.all('*', function(request, response) {
+    response.status(404);
+    response.send('404 - Not found');
 });
 
 app.listen(port, function() {
